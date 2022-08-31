@@ -1,0 +1,8 @@
+<!--pages/line/line.wxml-->
+<view class="wrap" style="width: 320px; height: 200px;">
+  <canvas canvas-id="chart" style="width: 320px; height: 200px;"></canvas>
+  <canvas canvas-id="line" style="width: 320px; height: 200px;"></canvas>
+  <!-- 用于触摸提示，保持与上一个canvas大小与位置完全一致，不需要的话可以省略 -->
+  <canvas canvas-id="chart-tips" style="width: 320px; height: 200px;" disable-scroll bindtouchstart="tipsStart" bindtouchmove="tipsMove" bindtouchend="tipsEnd">
+  </canvas>
+</view>
